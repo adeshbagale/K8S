@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata: 
     name: nginx-deployment
@@ -14,3 +14,6 @@ spec:
                 image: nginx:1.22.1
                 ports:
                   - containerPort: 80
+    selector:
+        matchLables:
+            app: my-nginx
