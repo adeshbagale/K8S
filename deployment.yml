@@ -15,5 +15,5 @@ spec:
                 ports:
                   - containerPort: 80
     selector:
-        matchLables:
+        matchLabels:
             app: my-nginx
