@@ -30,6 +30,6 @@ spec:
     app: nginx-node
   ports:
     - name: http
-      port:30002
+      port: 30002
       targetPort: 80
       nodePort: 30090
