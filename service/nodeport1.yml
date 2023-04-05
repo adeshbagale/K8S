@@ -10,8 +10,8 @@ spec:
         app: nginx-node
     spec:
       containers:
-        - name: nginx
-          image: nginx:1.14.2
+        - name: myself
+          image: adeshmb?remote_repo:v1
           ports:
             - containerPort: 80
   selector:
