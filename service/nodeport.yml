@@ -27,7 +27,7 @@ metadata:
 spec: 
     type: NodePort
     selector:
-        app: ip-app
+        app: nginx-node
     ports:
        - name: http
          port: 30002     
