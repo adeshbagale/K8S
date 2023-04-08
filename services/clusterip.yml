@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: my-dp-cip
+spec:
+    replicas: 5
+    template:
+        metadata:
+          labels:
+            app: my-dp
+        spec:
+            containers:
+                - name: nginx
+                  image: nginx
+                  ports:
+                      -containerPort: 80
+    selector:
+      matchLabels:
+          app: my-dp
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-clusterip
+spec:
+  selector:
+    app: my-dp
+  ports:
+    -name: http
+     port: 30010
+     targetPort: 80
