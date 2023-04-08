@@ -8,7 +8,7 @@ metadata:
 
   labels:
 
-    app: nginx-nodeport
+    app: nginx
 
 spec:
 
