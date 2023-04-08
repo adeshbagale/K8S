@@ -4,6 +4,9 @@ metadata:
     name: my-dp-cip
 spec:
     replicas: 5
+    selector:
+      matchLabels:
+          app: my-dp
     template:
         metadata:
           labels:
@@ -14,10 +17,6 @@ spec:
               image: nginx:1.14.2
               ports:
                 - containerPort: 80
-    selector:
-      matchLabels:
-          app: my-dp
-
 ---
 
 apiVersion: v1
