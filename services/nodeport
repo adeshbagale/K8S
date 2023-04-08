@@ -8,7 +8,7 @@ metadata:
 
   labels:
 
-    app: nginx
+    app: nginx-nodeport
 
 spec:
 
@@ -18,7 +18,7 @@ spec:
 
     matchLabels:
 
-      app: nginx
+      app: nginx-nodeport
 
   template:
 
@@ -26,7 +26,7 @@ spec:
 
       labels:
 
-        app: nginx
+        app: nginx-nodeport
 
     spec:
 
@@ -45,7 +45,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: clusterip-dp
+  name: nodeport-dp
 spec:
   type: NodePort
   selector:
