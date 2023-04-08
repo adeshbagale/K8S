@@ -14,7 +14,7 @@ spec:
 
     matchLabels:
 
-      app: nginx-dp
+      app: dp-nodeport
 
   template:
 
@@ -22,7 +22,7 @@ spec:
 
       labels:
 
-        app: nginx-dp
+        app: dp-nodeport
 
     spec:
 
