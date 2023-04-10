@@ -8,6 +8,7 @@ spec:
     metadata:
       labels:
         app: nginx
+        namespace: my-ns
     spec:
       containers:
         - name: nginx
