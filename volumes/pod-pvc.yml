@@ -14,4 +14,4 @@ spec:
             - containerPort: 80
           volumeMounts:
             - mountPath: /usr/share/nginx/html
-              name: pod-pv-storage
+              name: pv-vol
