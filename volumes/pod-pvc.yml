@@ -5,8 +5,8 @@ metadata:
 spec:
     volumes:
         - name: pv-vol
-        persistentVolumeClaim: 
-          claimName: pv-claim
+          persistentVolumeClaim: 
+            claimName: pv-claim
     containers:
         - name: my-pod
           image: nginx
